@@ -9,7 +9,7 @@ jQuery(document).ready(function ($) {
         //$SlideHeight: 300, //[Optional] Height of every slide in pixels, the default is width of 'slides' container
         $SlideSpacing: 0, //Space between each slide in pixels
         $DisplayPieces: 2, //Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
-        $ParkingPosition: Math.round((window.innerWidth-910)/2), //The offset position to park slide (this options applys only when slideshow disabled).
+        $ParkingPosition: Math.round(((window.innerWidth-910)/2)-8), //The offset position to park slide (this options applys only when slideshow disabled).
         $SlideDuration: 200,
 
         $ArrowNavigatorOptions: { //[Optional] Options to specify and enable arrow navigator or not
