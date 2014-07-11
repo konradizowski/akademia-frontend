@@ -4,4 +4,3 @@ node_modules
 .sass-cache
 Gruntfile.js
 package.json
-sass

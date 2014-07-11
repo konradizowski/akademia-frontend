@@ -1,0 +1,734 @@
+/* text colors */
+$color-white: #ffffff
+
+/*  containers */
+/*$screen-sm: 991px*/
+$grid-float-breakpoint: 991px
+$screen-lg: 1240px
+$grid-gutter-width: 30px
+$container-large-desktop: ((1220px + $grid-gutter-width))
+
+
+/* override variable - http://getbootstrap.com/customize/#less-variables */
+$font-family-base: 'PT Sans Narrow', sans-serif
+$font-size-base: 16px
+$font-size-h2: floor(($font-size-base * 1.90))
+$font-size-large: ceil(($font-size-base * 1.10))
+$line-height-base: 1.628571429
+$headings-color: #6B6B6B
+
+/* buttons */
+$btn-default-border: #929292
+$border-radius-base: 2px
+$padding-base-vertical: 2px
+$padding-base-horizontal: 16px
+$btn-default-bg :#858585
+$btn-default-color: $color-white
+$btn-danger-bg: #EB0116
+$btn-danger-border: #EB0116
+$btn-info-bg: #205eba
+$btn-info-border: #316dc7
+$border-radius-large: $border-radius-base
+$padding-large-horizontal: $padding-base-horizontal*2
+
+
+
+/* custom colors */
+$custom-1grey-background: #EAEAEA
+$custom-1grey-color: #6d6d6d
+$custom-white-text-shadow: 2px 1px 1px $color-white
+$custom-1blue-background: #457ED3
+$custom-2blue-background: #3968AE
+
+/* navs */
+$nav-link-padding: 4px 20px 4px 10px
+$nav-link-hover-bg: #3C6EB8
+
+/* navbar */
+$navbar-height: 60px
+$navbar-default-bg: #457ED3
+$navbar-default-border: transparent
+$navbar-default-link-color: $color-white
+$navbar-default-link-hover-color: $color-white
+$navbar-default-link-active-color: $color-white
+$navbar-default-link-hover-bg: #205EBA
+$navbar-default-link-active-bg: #205EBA
+$navbar-default-toggle-border-color: $color-white
+$navbar-default-toggle-icon-bar-bg: $color-white
+
+/* labels */
+$label-info-bg: #3083FF
+$label-default-bg: #363636
+$label-success-bg: #52A601
+
+$hr-border: #D0D0D0
+
+/* wells */
+$well-bg: #F2F3F7
+$well-border: transparent
+
+/* margins */
+@mixin margin-tb-20
+	margin-top: 20px
+	margin-bottom: 20px
+
+
+
+@mixin border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	-ms-border-radius: $radius
+	border-radius: $radius
+
+@mixin transition1($time)
+	-webkit-transition: all $time ease
+	-moz-transition: all $time ease
+	-o-transition: all $time ease
+	-ms-transition: all $time ease
+	transition: all $time ease
+
+h2
+	text-transform: uppercase
+.btn
+	text-shadow: none
+	text-transform: uppercase
+.nav
+	a, a:hover, a:focus
+		color: $color-white
+	li
+		border-bottom: 1px solid #4474BA
+nav.navbar
+	/*font-size: $font-size-large*/
+	font-weight: bold
+	letter-spacing: 1px
+	box-shadow: 2px 2px 12px #000
+	border-bottom: 0 none
+	li
+		border-bottom: 0 none
+		border-right: 2px dotted #316dc7
+	li.first
+		border-left: 2px dotted #316dc7
+	a
+		text-transform: uppercase
+
+
+
+@import "bootstrap"
+
+body
+	position: relative
+	padding-top: 59px
+
+.well
+	box-shadow: none
+.well2
+	background: #E7F1F3
+	padding: 8px 15px
+
+.label
+	border-radius: 1em
+
+/* own helpers */
+
+.font-size-large
+	font-size: $font-size-large
+.font-size-big
+	font-size: ceil($font-size-large*1.8)
+.font-size-max
+	font-size: ceil($font-size-large*2.7)
+.font-weight
+	font-weight: normal
+
+.text-red
+	color: #EB0116
+.text-grey
+	color: #898989
+.text-lightgrey
+	color: #C9C9C9
+
+.line-bottom
+	border-bottom: 1px solid #D0D0D0
+	padding-bottom: 3px
+.line-left
+	border-left: 1px solid #D0D0D0
+	padding-left: 15px
+.line-right
+	border-right: 1px solid #D0D0D0
+	padding-right: 15px
+.bg-color1
+	background: #E9EAEE
+.bg-color2
+	background: #F3F3F3
+
+.margin-top0
+	margin-top: 0
+.margin-bottom0
+	margin-bottom: 0
+.margin-top20
+	margin-top: 20px
+.margin-left20
+	margin-left: 20px
+.padding-top15
+	padding-top: 15px
+.padding-bottom15
+	padding-bottom: 15px
+
+
+.list-bg1
+	list-style-type: none
+	padding-left: 20px
+	li
+		background: url('../images/li.png') no-repeat 0px 11px
+		padding-left: 20px
+.navbar-nav > li > a
+	padding-left: 20px
+#nav-lupa
+	form
+		display: none
+		position: absolute
+		background: #205EBA
+		margin: 0 0 0 -275px
+		padding: 5px 0
+		width: 335px
+		input
+			background: transparent
+			color: $color-white
+			border: none
+			width: 230px
+			margin-left: 10px
+		::-webkit-input-placeholder
+			color: $color-white
+		:-moz-placeholder
+			color: $color-white
+		::-moz-placeholder
+			color: $color-white
+		:-ms-input-placeholder
+			color: $color-white
+/*#nav-lupa:hover
+	form
+		display: block*/
+
+/* rows */
+.konf-row
+	margin-top: 10px
+.training-list-row
+	padding-top: 20px
+	overflow: hidden
+	position: relative
+	display: block
+	width: 100%
+	text-align: center
+	.training-list
+		/* overflow: hidden */
+	.training
+		display: inline-block
+		overflow: hidden
+		margin-right: 0.2%
+		width: 300px
+		height: 250px
+		z-index: 1
+		color: $color-white
+		text-transform: uppercase
+		position: relative
+		.div-in
+			overflow: hidden
+			position: relative
+			display: block
+			z-index: 2
+			width: 100%
+			height: 250px
+		.link
+			bottom: 0
+			display: none
+			left: 0
+			position: absolute
+			right: 0
+			text-indent: -20000px
+			top: 0
+			z-index: 100
+		.overlay, .overlay-hover
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			z-index: 3
+		.overlay
+			opacity: 0.5
+		.overlay-hover
+			opacity: 0.8
+			top: 450px
+			border: 0
+			border-top-width: 12px
+			border-style: outset
+			@include transition1(0.3s)
+		
+		.inside
+			z-index: 4
+			position: relative
+			width: 100%
+			height: 100%
+			overflow: hidden
+			p, small, span.label, .title, .label-ribbon
+				margin: 0
+			.title, .date, .description
+				padding: 0
+				overflow: hidden
+			.labels, .desc, .labels-bottom
+				width: 100%
+			.labels
+				height: 35px
+				.pull-left
+					margin: 11px 0 0 11px
+				.pull-right
+					margin: 11px 11px 0 0
+					max-width: 180px
+					text-overflow: ellipsis
+					white-space: nowrap
+					overflow: hidden
+			.desc
+				height: 180px
+				overflow: hidden
+				position: relative
+				width: 100%
+			.title
+				color: $color-white
+				text-align: center
+				text-shadow: 2px 1px 1px #5C5D5D
+				top: 55px
+				position: absolute
+				height: 56px
+				width: 100%
+				line-height: 1.1
+				padding: 0 11px
+				font-size: 17px
+				font-weight: bold
+				@include transition1(0.3s)
+			.date
+				text-align: center
+				font-size: floor(($font-size-base * 0.85))
+				top: 8px + 60px + 45px
+				position: absolute
+				text-align: center
+				width: 100%
+				height: 21px
+				@include transition1(0.3s)
+			.last-day
+				height: 25px
+				top: 149px
+				position: absolute
+				text-align: center
+				width: 100%
+				background: rgb(84, 49, 67)
+				background: rgba(84, 49, 67, 0.8)
+				@include transition1(0.3s)
+			.description
+				line-height: 1.3
+				text-shadow: 2px 1px 1px #5C5D5D
+				height: 64px
+				top: 60px + 10px + 8px + 21px + 60px + 45px
+				position: absolute
+				text-align: center
+				width: 100%
+				overflow: hidden
+				padding: 0 11px
+				@include transition1(0.3s)
+			.button
+				top: 10px + 60px + 10px + 8px + 21px + 60px + 45px
+				position: absolute
+				text-align: center
+				width: 100%
+				@include transition1(0.6s)
+			.labels-bottom
+				height: 35px
+			small
+				text-transform: none
+			span.label
+				margin: 5px
+				border-radius: 12px
+				font-size: floor(($font-size-base * 0.85))
+				font-weight: normal
+			.label-ribbon
+				font-size: $font-size-base
+				margin: 5px 0 5px 5px
+				opacity: 0.9
+	.bg1
+		background: url('../images/szkolenie2.jpg')
+	.bg2
+		background: url('../images/tekstura1.jpg')
+	.bg3
+		background: url('../images/szkolenie3.jpg')
+	.training
+		.color1
+			background-color: rgb(76, 1, 132)
+			border-color: rgb(76, 1, 132)
+			border-color: rgba(76, 1, 132, 0.4)
+		.color2
+			background-color: rgb(24, 74, 60)
+			border-color: rgb(24, 74, 60)
+			border-color: rgba(24, 74, 60, 0.4)
+		.color3
+			background-color: rgb(75, 33, 8)
+			border-color: rgb(75, 33, 8)
+			border-color: rgba(75, 33, 8, 0.4)
+.no-touch
+	.training:hover
+		.link
+			display: inline
+		.title
+			top: -56px
+		.date
+			top: 8px
+		.last-day
+			top: 10px + 8px + 21px
+		.description
+			top: 10px + 20px + 10px + 8px + 21px
+		.button
+			top: 20px + 60px + 20px + 10px + 8px + 21px
+		.overlay-hover
+			top: 33px
+.touch
+	.training
+		.link
+			display: inline
+	
+/*.training
+	border: 2px solid #F3F3F3
+	width: 300px
+	display: inline-block
+	margin: 10px 0
+	height: 250px
+	overflow: hidden
+	position: relative
+	background: url('../images/szkolenie1.jpg')
+	color: $color-white
+	text-transform: uppercase
+	div
+		overflow: hidden
+		position: relative
+		height: 250px
+	.title
+		@include transition1(0.5s)
+		overflow: hidden
+	.button, .description
+		@include transition1(0.2s)
+		overflow: hidden
+		position: relative
+	.label-ribbon
+		position: relative
+	small
+		text-transform: none
+	span.label
+		margin: 5px
+		border-radius: 12px
+		font-size: floor(($font-size-base * 0.85))
+		font-weight: normal
+	.title
+		color: $color-white
+		margin: 80px 10px 10px
+		text-align: center
+		max-height: 200px
+		text-shadow: 2px 1px 1px #5C5D5D
+	.date
+		text-align: center
+		position: relative
+		font-size: floor(($font-size-base * 0.85))
+	.button
+		max-height: 0px
+	.description
+		max-height: 0px
+		margin-left: 10px
+		margin-right: 10px
+	.label-ribbon
+		font-size: $font-size-base
+	.overlay
+		background: #285447
+		border-top: 30px solid rgb(40, 84, 71)
+		border-top: 30px solid rgba(40, 84, 71, 0.5)
+		-webkit-background-clip: padding-box
+		background-clip: padding-box
+		opacity: 0.8
+		height: 0
+		position: absolute
+		width: 100%
+		bottom: -30px
+		left: 0
+		display: block
+		z-index: 0
+		@include transition1(0.6s)
+	div:hover
+		.title
+			max-height: 0px
+			margin-top: 30px
+			@include transition1(0.4s)
+		.date
+			margin-top: 30px
+		.button
+			max-height: 30px
+		.overlay
+			height: 226px
+		.description
+			max-height: 50px
+			@include transition1(0.6s)
+	.overlay.color2
+		background: #4C0184
+		opacity: 0.8
+		border-top: 30px solid rgb(71, 1, 132)
+		border-top: 30px solid rgba(71, 1, 132, 0.5)
+		-webkit-background-clip: padding-box
+		background-clip: padding-box */
+
+.ads-row
+	padding-bottom: 20px
+	.our-partners-list
+		li
+			margin-right: 0.2%
+			img
+				margin: 0
+.our-partners
+	padding-top: 20px
+	padding-bottom: 60px
+	h2
+		margin-bottom: 30px 
+.our-partners-list
+	text-align: center
+	li
+		min-width: 220px
+		display: inline-block
+		text-align: center
+		img
+			margin: 50px 0
+			text-align: center
+			vertical-align: middle
+.ads-list
+	li
+		margin-right: 0.2%
+		img
+			margin: 0
+.gr-row
+	background: $custom-1grey-background
+	color: $custom-1grey-color
+	text-shadow: $custom-white-text-shadow
+	padding-top: 35px
+	padding-bottom: 40px
+
+.footer-row
+	background: $custom-1blue-background
+	color: $color-white
+	padding-bottom: 40px
+	a
+		color: #FFBB03
+	.nav
+		padding-right: 60px
+		a
+			color: $color-white
+	h3
+		color: $color-white
+
+.copy-row
+	background: $custom-2blue-background
+	color: $color-white
+	p
+		@include margin-tb-20
+#slider1_container
+	position: relative
+	top: 0px
+	left: 0px
+	width: 100%
+	height: 435px
+	overflow: hidden
+#slide1_container_ins
+	cursor: move
+	position: absolute
+	left: 0px
+	top: 0px
+	width: 100%
+	height: 435px
+	overflow: hidden
+.slide-content
+	position: absolute
+	width: 100%
+	top: 10px
+	left: 0
+	padding: 0
+	color: $color-white
+	.label
+		font-size: floor(($font-size-base * 1.30))
+		font-weight: normal
+		margin: 20px
+	.title
+		font-weight: bold
+		margin-top: 90px
+		margin-bottom: 10px
+		color: $color-white
+		font-size: floor(($font-size-base * 2.50))
+		text-shadow: 2px 1px 1px #5C5D5D
+	.description
+		font-size: floor(($font-size-base * 1.25))
+		height: 65px
+		margin-bottom: 5px
+		overflow: hidden
+		span
+			background: #306CC6
+			padding: 2px 20px
+	.date
+		span
+			background: #306CC6
+			padding: 3px 20px
+	.button
+		margin-top: 23px
+		margin-bottom: 5px
+	.last-day
+		height: 35px
+		line-height: 35px
+		text-align: center
+		margin: 0
+		width: 100%
+		background: rgb(84, 49, 67)
+		background: rgba(84, 49, 67, 0.8)
+
+.slider-overlay
+	height: 435px
+	left: 0
+	position: absolute
+	top: 0
+	width: 910px
+	background: #202020
+	opacity: 0.8
+.prelegent
+	padding-left: 5px
+	padding-right: 5px
+	margin-bottom: 10px
+	.prelegent-ins
+		padding-top: 15px
+		padding-bottom: 15px
+		@include transition1(0.6s)
+	img
+		border-radius: 50%
+		border: 12px solid $color-white
+		@include transition1(0.6s)
+	.line-bottom
+		display: block
+		width: 90px
+		margin: 10px auto
+		@include transition1(0.6s)
+	.prelegent-ins:hover
+		background: #D9DADD
+		img
+			border: 12px solid #8CB1E8
+		.line-bottom
+			border-bottom: 1px solid #457ED3
+
+.konf-date
+	border-radius: 7px
+	background: #373737
+	color: $color-white
+	.day
+		background: $color-white
+		border-radius: 5px
+		border: 1px solid #CBCCCE
+		padding: 5px 0
+.konf-nav-side
+	li
+		padding-left: 20px
+		border: none
+		padding: 0
+		border-bottom: 0px solid $color-white
+		margin: 0
+	li:hover, li.active, .list-group-item.active, .list-group-item:hover
+		background: #467ED5 url('../images/nav-bg.jpg') no-repeat 0 0
+		border-bottom: 1px solid $color-white
+		a
+			background: transparent
+			color: $color-white
+			text-decoration: none
+			text-shadow: 1px 1px 1px #000000
+			span
+				border-bottom: 0px
+	a
+		font-weight: bold
+		color: #808080
+		display: block
+		margin-left: 30px
+		font-size: $font-size-large
+		background: #F7F7F7
+		text-shadow: 1px 1px 1px $color-white
+		span
+			padding: 7px 0 6px 40px
+			display: block
+			border-bottom: 1px solid #E6E6E6
+			/*border-right: 1px solid #E6E6E6*/
+	/*.top-item
+		a
+			span
+				border-top: 1px solid #E6E6E6*/
+.nav.konf-nav-side > li > a
+	padding: 0
+.affix
+	width: 283px		
+
+
+.jssora13l, .jssora13r, .jssora13ldn, .jssora13rdn
+	position: absolute
+	cursor: pointer
+	display: block
+	overflow: hidden
+	width: 25px
+	height: 38px
+	top: 190px
+	opacity: 0.7
+.jssora13l, .jssora13ldn
+	left: 15%
+	background: url(../images/arr-left.png) no-repeat
+.jssora13r, .jssora13rdn
+	background: url(../images/arr-right.png) no-repeat
+	right: 15%
+.jssora13l:hover
+	opacity: 1
+.jssora13r:hover
+	opacity: 1
+.jssorb21 div, .jssorb21 div:hover, .jssorb21 .av
+	background: url(../images/jquery-slider/b21.png) no-repeat
+	overflow: hidden
+	cursor: pointer
+.jssorb21
+	position: absolute
+	bottom: 8px
+	left: 50%
+	.jssorb21_ins
+		position: absolute
+		width: 19px
+		height: 19px
+		text-align: center
+		line-height: 19px
+		color: white
+		font-size: 12px
+	div
+		background-position: -5px -5px
+	div:hover
+		background-position: -35px -5px
+	.av:hover
+		background-position: -35px -5px
+/*.jssorb21 .av
+	background-position: -65px -5px*/
+.jssorb21 .av, .jssorb21 .dn, .jssorb21 .dn:hover
+	background-position: -95px -5px
+
+#message-footer
+	font-size: 12px
+	display: block
+	display: none
+	z-index: 999
+	position: fixed
+	bottom: 70px
+	margin-top: -35px
+	right: 15px
+	margin-left: -70px
+	width: 58px
+	a
+		display: block
+		padding: 28px
+		opacity: 0.8
+		background: url(../images/back-top.png) no-repeat center center
+	a:hover
+		opacity: 1
