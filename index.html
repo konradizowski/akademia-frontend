@@ -9,9 +9,10 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+        <!--[if lt IE 9]>
+            <script src="assets/javascripts/vendor/html5shiv.min.js"></script>
+        <![endif]-->        
         <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="assets/stylesheets/normalize.css">
         <link rel="stylesheet" href="assets/stylesheets/main.css">
         <script src="assets/javascripts/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -67,8 +68,11 @@
                             <h2 class="title text-center">Odpowiedzialność prawna managera<br>sympozjum wiedzy zarządcy</h2>
                             <p class="description text-center"><span>Podejmuje odważne decyzje biznesowe</span><br><span>bez ryzyka i konsekwencji prawnych.</span></p>
                             <p class="date text-center"><span><small>Warszawa, 20.07.2014r.</small></span></p>
-                            <p class="last-day">Ostatnie <strong>5</strong> dni rejestracji</p>
-                            <p class="button text-center"><a class="btn btn-danger btn-lg" href="#" role="button">Weź udział w konferencji&nbsp;&nbsp;&nbsp;&raquo;</a></p>
+                            <p class="button text-center"><a class="btn btn-danger btn-lg btn-special-slider" href="#" role="button">Weź udział w konferencji&nbsp;&nbsp;&nbsp;&raquo;<br>
+                                <small class="font-size-small">Ostatnie dni rejestracji</small></a></p>
+                            <div class="labels-bottom">
+                                <span class="label label-default pull-left label-ribbon text-uppercase">Wstęp darmowy</span> <span class="label label-default pull-left label-ribbon text-uppercase">Książka gratis</span>
+                            </div> 
                         </div>
                         <div class="slider-overlay" id="slide-overlay-0" style="display:none"></div>
                     </div>
@@ -80,7 +84,10 @@
                             <h2 class="title text-center">Odpowiedzialność prawna managera<br>sympozjum wiedzy zarządcy</h2>
                             <p class="description text-center"><span>Podejmuje odważne decyzje biznesowe</span><br><span>bez ryzyka i konsekwencji prawnych.</span></p>
                             <p class="date text-center"><span><small>Warszawa, 20.07.2014r.</small></span></p>
-                            <p class="button text-center"><a class="btn btn-danger btn-lg" href="#" role="button">Weź udział w konferencji&nbsp;&nbsp;&nbsp;&raquo;</a></p>
+                            <p class="button text-center"><a class="btn btn-danger btn-lg btn-special-slider" href="#" role="button">Weź udział w konferencji&nbsp;&nbsp;&nbsp;&raquo;</a></p>
+                            <div class="labels-bottom">
+                                <span class="label label-default pull-left label-ribbon text-uppercase">Wstęp darmowy</span> <span class="label label-default pull-left label-ribbon text-uppercase">Książka gratis</span>
+                            </div>
                         </div>
                         <div class="slider-overlay" id="slide-overlay-1"></div>
                     </div>
@@ -92,7 +99,10 @@
                             <h2 class="title text-center">Odpowiedzialność prawna managera<br>sympozjum wiedzy zarządcy</h2>
                             <p class="description text-center"><span>Podejmuje odważne decyzje biznesowe</span><br><span>bez ryzyka i konsekwencji prawnych.</span></p>
                             <p class="date text-center"><span><small>Warszawa, 20.07.2014r.</small></span></p>
-                            <p class="button text-center"><a class="btn btn-danger btn-lg" href="#" role="button">Weź udział w konferencji&nbsp;&nbsp;&nbsp;&raquo;</a></p>
+                            <p class="button text-center"><a class="btn btn-danger btn-lg btn-special-slider" href="#" role="button">Weź udział w konferencji&nbsp;&nbsp;&nbsp;&raquo;</a></p>
+                            <div class="labels-bottom">
+                                <span class="label label-default pull-left label-ribbon text-uppercase">Wstęp darmowy</span> <span class="label label-default pull-left label-ribbon text-uppercase">Książka gratis</span>
+                            </div>
                         </div>
                         <div class="slider-overlay" id="slide-overlay-2"></div>
                     </div>
@@ -250,7 +260,6 @@
                         </div>
                         <div class="clearfix"></div>
                         <p class="text-center margin-bottom0"><a class="btn btn-danger btn-lg margin-top20" href="#" role="button">Sprawdź wszystkie szkolenia i konferencje&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&raquo;</a></p>
-
                     </div>
                 </div>
             </div>
@@ -317,12 +326,12 @@
                         <h3>Nawigacja</h3>
 
                         <ul class="nav">
-                            <li><a href="#">&raquo;&nbsp;&nbsp;&nbsp;Polityka prywatności</a></li>
-                            <li><a href="#">&raquo;&nbsp;&nbsp;&nbsp;Polityka coockie</a></li>
-                            <li><a href="#">&raquo;&nbsp;&nbsp;&nbsp;Zwroty i reklamacje</a></li>
+                            <li><a href="#">&raquo;&nbsp;&nbsp;&nbsp;Szkolenia i konferencje</a></li>
+                            <li><a href="#">&raquo;&nbsp;&nbsp;&nbsp;Kim jesteśmy</a></li>
+                            <li><a href="#">&raquo;&nbsp;&nbsp;&nbsp;Oferta</a></li>
+                            <li><a href="#">&raquo;&nbsp;&nbsp;&nbsp;Kontakt</a></li>
+                            <li><a href="#">&raquo;&nbsp;&nbsp;&nbsp;Dla sponsorów</a></li>
                             <li><a href="#">&raquo;&nbsp;&nbsp;&nbsp;Regulamin</a></li>
-                            <li><a href="#">&raquo;&nbsp;&nbsp;&nbsp;O wydawnictwie Wiedza i Praktyka</a></li>
-                            <li><a href="#">&raquo;&nbsp;&nbsp;&nbsp;Dla prasy</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4">
@@ -357,21 +366,10 @@
                 </div>
             </div>
         </div>
-
-
-
-        <!-- use jssor.slider.min.js instead for release -->
-        <!-- jssor.slider.min.js = (jssor.core.js + jssor.utils.js + jssor.slider.js) -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="assets/javascripts/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="assets/javascripts/plugins.js"></script>
-        <script src="assets/javascripts/bootstrap/affix.js"></script>
-        <script src="assets/javascripts/bootstrap/scrollspy.js"></script>
-        <script src="assets/javascripts/bootstrap/collapse.js"></script>
-        <script src="assets/javascripts/bootstrap.js"></script>
-        <script src="assets/javascripts/jquery-slider/jssor.core.js"></script>
-        <script src="assets/javascripts/jquery-slider/jssor.utils.js"></script>
-        <script src="assets/javascripts/jquery-slider/jssor.slider.js"></script>
+        <script src="assets/javascripts/plugins.min.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="assets/javascripts/bootstrap.min.js"></script>        
+        <script src="assets/javascripts/main-slider.js"></script>
         <script src="assets/javascripts/main.js"></script>
 
         <!-- Google Analytics
