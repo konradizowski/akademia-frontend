@@ -4,4 +4,5 @@ node_modules
 .sass-cache
 Gruntfile.js
 package.json
-sass
+akademia-frontend-project.sublime-project
+akademia-frontend-project.sublime-workspace
