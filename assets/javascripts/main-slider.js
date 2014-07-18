@@ -1,12 +1,13 @@
 jQuery(document).ready(function ($) { 
     var options = {
-        $AutoPlay: false,
+        $AutoPlay: true,
+        $AutoPlayInterval: 10000,
 
         $PauseOnHover: true, //[Optional] Whether to pause when mouse over if a slideshow is auto playing, default value is false
 
         $ArrowKeyNavigation: true, //Allows arrow key to navigate or not
         $SlideWidth: 910, //[Optional] Width of every slide in pixels, the default is width of 'slides' container
-        //$SlideHeight: 300, //[Optional] Height of every slide in pixels, the default is width of 'slides' container
+        //$SlideHeight: 410, //[Optional] Height of every slide in pixels, the default is width of 'slides' container
         $SlideSpacing: 0, //Space between each slide in pixels
         $DisplayPieces: 2, //Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
         $ParkingPosition: Math.round(((window.innerWidth-910)/2)-8), //The offset position to park slide (this options applys only when slideshow disabled).
@@ -33,11 +34,24 @@ jQuery(document).ready(function ($) {
     var jssor_slider1 = new $JssorSlider$('slider1_container', options);
 
     if(typeof jssor_slider1 != "undefined") {
-        jssor_slider1.$On($JssorSlider$.$EVT_PARK,function(slideIndex,fromIndex){
+        jssor_slider1.$On($JssorSlider$.$EVT_CLICK,function(slideIndex){
+            jssor_slider1.$PlayTo(slideIndex);
+        });
+        jssor_slider1.$On($JssorSlider$.$EVT_POSITION_CHANGE,function(slideIndex){
+            $(".slider-overlay").show();
+            if(slideIndex < jssor_slider1.$CurrentIndex())
+            {
+                $("#slide-overlay-" + Math.floor(slideIndex)).hide();
+            }
+            else
+            {
+                $("#slide-overlay-" + Math.ceil(slideIndex)).hide();
+            }
+        });
+        /*jssor_slider1.$On($JssorSlider$.$EVT_PARK,function(slideIndex,fromIndex){
             $(".slider-overlay").show();
             $("#slide-overlay-" + slideIndex).hide('fast');
-            //console.log(slideIndex);
-        });
+        });*/
 
         //responsive code begin
         //you can remove responsive code if you don't want the slider scales while window resizes
