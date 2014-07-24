@@ -1,5 +1,6 @@
 /* text colors */
 $color-white: #ffffff
+$icon-font-path: '../fonts/bootstrap/'
 
 /*  containers */
 /*$screen-sm: 991px*/
@@ -100,6 +101,12 @@ h2
 		color: $color-white
 	li
 		border-bottom: 1px solid #4474BA
+.nav-tabs
+	a
+		color: #333333
+		font-size: 18px
+	li
+		border-bottom: 0px
 nav.navbar
 	/*font-size: $font-size-large*/
 	font-weight: bold
@@ -640,6 +647,21 @@ body
 			padding: 7px 0 6px 40px
 			display: block
 			border-bottom: 1px solid #E6E6E6
+		.bg1
+			background: url('../images/nav-konf-1.png') no-repeat 10px 11px
+		.bg2
+			background: url('../images/nav-konf-2.png') no-repeat 10px 11px
+		.bg3
+			background: url('../images/nav-konf-3.png') no-repeat 10px 11px
+		.bg4
+			background: url('../images/nav-konf-4.png') no-repeat 10px 11px
+		.bg5
+			background: url('../images/nav-konf-5.png') no-repeat 10px 11px
+		.bg6
+			background: url('../images/nav-konf-6.png') no-repeat 10px 11px
+		.bg7
+			background: url('../images/nav-konf-7.png') no-repeat 10px 11px
+
 	.top-item
 		margin-top: 2px
 	.special
@@ -973,3 +995,11 @@ body
 .jcarousel-control-next
 	right: -20px
 	background: url('../images/car-nex.jpg') no-repeat top center
+
+
+.konf-row h3[id]:before, .konf-row #prelegenci:before, h1#szczegoly:before
+	display: block
+	content: " "
+	margin-top: -75px
+	height: 75px
+	visibility: hidden
