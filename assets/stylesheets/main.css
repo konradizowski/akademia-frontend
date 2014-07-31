@@ -6710,6 +6710,10 @@ body {
   padding-top: 59px;
 }
 
+.static-page {
+  font-size: 17px;
+}
+
 .well {
   box-shadow: none;
 }
@@ -6719,7 +6723,8 @@ body {
   padding: 8px 15px;
 }
 
-.training-list-row .btn {
+/*.training-list-row */
+.btn {
   white-space: normal;
 }
 
@@ -6763,6 +6768,10 @@ body {
 
 .text-lightgrey {
   color: #c9c9c9;
+}
+
+.text-color1 {
+  color: #646464;
 }
 
 .line-bottom {
@@ -6883,6 +6892,15 @@ body {
 }
 .konf-row .training-list-row .training, .konf-row .ads-row .our-partners-list li {
   margin-right: 0;
+}
+.konf-row h3 {
+  font-size: 36px;
+}
+.konf-row .bg-szolenie-p1 {
+  background: #f2f3f7 url("../images/bg-szolenie1.jpg") no-repeat left top;
+  margin-bottom: 20px;
+  min-height: 20px;
+  border-radius: 2px;
 }
 
 .training-list-row {
@@ -7133,6 +7151,7 @@ body {
 
 .ads-row {
   padding-bottom: 20px;
+  padding-top: 30px;
 }
 .ads-row .our-partners-list li {
   margin-right: 0.2%;
@@ -7329,6 +7348,7 @@ body {
   -o-transition: all 0.6s ease;
   -ms-transition: all 0.6s ease;
   transition: all 0.6s ease;
+  max-width: 80%;
 }
 .prelegent .line-bottom {
   display: block;
@@ -7434,6 +7454,15 @@ body {
 }
 .konf-nav-side a .bg7 {
   background: url("../images/nav-konf-7.png") no-repeat 10px 11px;
+}
+.konf-nav-side a .bg8 {
+  background: url("../images/nav-konf-8.png") no-repeat 10px 11px;
+}
+.konf-nav-side a .bg9 {
+  background: url("../images/nav-konf-9.png") no-repeat 10px 11px;
+}
+.konf-nav-side a .bg10 {
+  background: url("../images/nav-konf-10.png") no-repeat 10px 11px;
 }
 .konf-nav-side .top-item {
   margin-top: 2px;
@@ -7620,15 +7649,26 @@ body {
     right: 10%;
   }
 }
+@media (max-width: 990px) {
+  .bg-szolenie-p1 {
+    background: none !important;
+  }
+}
+@media (min-width: 991px) {
+  .bg-szolenie-p1 .well {
+    background: none !important;
+  }
+}
 @media (max-width: 767px) {
   .gr-row {
     padding-top: 0;
   }
-  .gr-row .line-right {
-    border-right: 0 none;
-  }
   .gr-row .margin-top0 {
     margin-top: 26px;
+  }
+
+  .line-right {
+    border-right: 0 none;
   }
 
   .slide-content .label-type, .slide-content .labels-bottom {
@@ -7636,6 +7676,10 @@ body {
   }
   .slide-content .label-category {
     right: 15%;
+  }
+
+  .map-google {
+    padding-top: 20px;
   }
 }
 @media (max-width: 662px) {
@@ -7647,6 +7691,14 @@ body {
   }
 }
 @media (max-width: 520px) {
+  .jssora13l {
+    display: none;
+  }
+
+  .jssora13r {
+    display: none;
+  }
+
   .slide-content .label-type, .slide-content .labels-bottom {
     left: 27%;
   }
@@ -7664,6 +7716,39 @@ body {
   }
   .slide-content .label-category {
     right: 30%;
+  }
+
+  .countdown_cont2 {
+    clear: both;
+    display: block !important;
+    text-align: center;
+  }
+}
+@media (max-width: 377px) {
+  .slide-content .label-type, .slide-content .labels-bottom {
+    left: 33%;
+    font-size: 15px;
+  }
+  .slide-content .label-category {
+    right: 33%;
+    font-size: 15px;
+  }
+  .slide-content .title {
+    font-size: 20px;
+  }
+  .slide-content .description {
+    font-size: 18px;
+  }
+}
+@media (max-width: 395px) {
+  #nav-lupa form input {
+    width: auto;
+    margin-left: 0;
+  }
+}
+@media (max-width: 334px) {
+  #nav-lupa form input {
+    width: 160px;
   }
 }
 /* timeline */
@@ -7832,7 +7917,7 @@ body {
 
 /* jcarousel */
 .jcarousel-wrapper {
-  margin: 10px auto 20px;
+  margin: 10px 8px 20px 9px;
   position: relative;
 }
 
@@ -7853,8 +7938,8 @@ body {
 .jcarousel li {
   width: 300px;
   float: left;
-  margin-right: 3px !important;
-  margin-left: 2px;
+  margin-right: 1px !important;
+  margin-left: 0px;
 }
 
 .jcarousel img {
@@ -7874,16 +7959,16 @@ body {
 }
 
 .jcarousel-control-prev {
-  left: -20px;
+  left: -17px;
   background: url("../images/car-prev.jpg") no-repeat top center;
 }
 
 .jcarousel-control-next {
-  right: -20px;
+  right: -17px;
   background: url("../images/car-nex.jpg") no-repeat top center;
 }
 
-.konf-row h3[id]:before, .konf-row #prelegenci:before, h1#szczegoly:before {
+.konf-row h3[id]:before, .konf-row #prelegenci:before, #szczegoly:before {
   display: block;
   content: " ";
   margin-top: -75px;
