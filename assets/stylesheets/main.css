@@ -1742,18 +1742,40 @@ pre code {
 .container:after {
   clear: both;
 }
+@media (min-width: 330px) {
+  .training-list-row .container {
+    width: 330px;
+  }
+}
+@media (min-width: 640px) {
+  .container {
+    width: 640px;
+  }
+  .training-list-row .container {
+    width: 640px;
+  }
+}
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 640px;
+  }
+  .training-list-row .container {
+    width: 640px;	  
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 943px;
+  }
+  .training-list-row .container {
+	width: 943px;
   }
 }
 @media (min-width: 1240px) {
   .container {
+    width: 1250px;
+  }
+  .training-list-row .container {
     width: 1250px;
   }
 }
@@ -6909,7 +6931,7 @@ body {
   position: relative;
   display: block;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 .training-list-row .training-list {
   /* overflow: hidden */
@@ -7917,14 +7939,49 @@ body {
 
 /* jcarousel */
 .jcarousel-wrapper {
-  margin: 10px 8px 20px 9px;
+  margin: 10px 4px 20px 4px;
   position: relative;
+  text-align: center;
 }
 
 .jcarousel {
   position: relative;
   overflow: hidden;
   width: 100%;
+}
+
+@media (min-width: 330px) {
+  .jcarousel-wrapper {
+  	margin: 10px 1px 20px 1px;
+  }
+  .jcarousel{
+	width: 301px;
+  	margin: 10px auto 20px auto;
+  }
+}
+@media (min-width: 640px) {
+  .jcarousel{
+	width: 602px;
+  	margin: 10px auto 20px auto;	  
+  }
+}
+@media (min-width: 768px) {
+  .jcarousel{
+	width: 602px;
+  	margin: 10px auto 20px auto;	  
+  }
+}
+@media (min-width: 992px) {
+  .jcarousel{
+	width: 903px;
+  	margin: 10px auto 20px auto;	  
+  }
+}
+@media (min-width: 1240px) {
+  .jcarousel{
+	width: 1204px;
+  	margin: 10px auto 20px auto;	  
+  }
 }
 
 .jcarousel ul {
