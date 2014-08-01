@@ -37,7 +37,7 @@ jQuery(document).ready(function ($) {
 
     var xMapa =52.22499; var yMapa =20.99128;
     var xyear=2014; var xmth=10; var xday=23;
-    var ContentMapa='<h4>Sprzedaz i zysk 2014</h4><dl class="dl-horizontal"><dt>Termin:</dt><dd>26.06.2014</dd><dt>Prowadzący:</dt><dd>Wojtek Chojnacki, Andrzej Pyra, Tomasz Kaczmarek</dd><dt>Miejsce:</dt><dd>Centrum szkoleniowe ADGAR OCHOTA<br>Al. Jerozolimskie 181B<br>02-222 Warszawa</dd></dl>'; 
+    var ContentMapa='<h4 class="text-center">Sprzedaz i zysk 2014</h4><dl class="dl-horizontal"><dt>Termin:</dt><dd>26.06.2014</dd><dt>Prowadzący:</dt><dd>Wojtek Chojnacki, Andrzej Pyra, Tomasz Kaczmarek</dd><dt>Miejsce:</dt><dd>Centrum szkoleniowe ADGAR OCHOTA<br>Al. Jerozolimskie 181B<br>02-222 Warszawa</dd></dl>'; 
 
     
     // Countdown //
@@ -124,39 +124,46 @@ jQuery(document).ready(function ($) {
     });
 
 
+    if($('.jcarousel ul li').length > 4)
+    {
+        var jcarousel = $('.jcarousel');
 
-    var jcarousel = $('.jcarousel');
+        jcarousel
+            .on('jcarousel:reload jcarousel:create', function () {
+                var width = jcarousel.innerWidth();
 
-    jcarousel
-        .on('jcarousel:reload jcarousel:create', function () {
-            var width = jcarousel.innerWidth();
+                if (width >= 600) {
+                    width = width / 3;
+                } else if (width >= 350) {
+                    width = width / 2;
+                }
 
-            if (width >= 600) {
-                width = width / 3;
-            } else if (width >= 350) {
-                width = width / 2;
-            }
+                //jcarousel.jcarousel('items').css('width', width + 'px');
+            })
+            .jcarousel({
+                wrap: 'circular'
+            });
 
-            //jcarousel.jcarousel('items').css('width', width + 'px');
+        $('.jcarousel-control-prev')
+            .jcarouselControl({
+                target: '-=1'
+            });
+
+        $('.jcarousel-control-next')
+            .jcarouselControl({
+                target: '+=1'
+            });  
+
+        $('#myTab a').click(function (e) {
+            e.preventDefault()
+            $(this).tab('show')
         })
-        .jcarousel({
-            wrap: 'circular'
-        });
-
-    $('.jcarousel-control-prev')
-        .jcarouselControl({
-            target: '-=1'
-        });
-
-    $('.jcarousel-control-next')
-        .jcarouselControl({
-            target: '+=1'
-        });  
-
-    $('#myTab a').click(function (e) {
-        e.preventDefault()
-        $(this).tab('show')
-    })
+    }
+    else
+    {
+        $('.jcarousel-control-prev').hide();
+        $('.jcarousel-control-next').hide();
+    }
 
     if((document.getElementById('slider1_container') != null) && ($("#slider1_container").length > 0)) {
         var options = {
