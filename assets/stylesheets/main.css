@@ -6768,6 +6768,10 @@ body {
   font-size: 18px;
 }
 
+.font-size-large2 {
+  font-size: 26px;
+}
+
 .font-size-big {
   font-size: 33px;
 }
@@ -6783,9 +6787,18 @@ body {
 .text-red {
   color: #eb0116;
 }
+.text-black {
+  color: #000000;
+}
 
 .text-grey {
   color: #898989;
+}
+.text-green {
+  color: #30AA01;
+}
+.text-blue {
+  color: #467ED3;
 }
 
 .text-lightgrey {
@@ -6799,6 +6812,10 @@ body {
 .line-bottom {
   border-bottom: 1px solid #d0d0d0;
   padding-bottom: 3px;
+}
+.line-top {
+  border-top: 1px solid #d0d0d0;
+  padding-top: 3px;
 }
 
 .line-left {
@@ -6818,17 +6835,28 @@ body {
 .bg-color2 {
   background: #f3f3f3;
 }
+.pos-top5 {
+  top: 5px;
+}
 
 .margin-top0 {
   margin-top: 0;
 }
 
+
 .margin-bottom0 {
   margin-bottom: 0;
 }
 
+.margin-top5 {
+  margin-top: 5px;
+}
 .margin-top20 {
   margin-top: 20px;
+}
+
+.margin-top13 {
+  margin-top: 13px;
 }
 
 .margin-bottom20 {
@@ -6842,7 +6870,9 @@ body {
 .padding-top0, .padding-top0.padding-top0 {
   padding-top: 0;
 }
-
+.padding-top5 {
+  padding-top: 5px;
+}
 .padding-top15 {
   padding-top: 15px;
 }
@@ -8031,4 +8061,9 @@ body {
   margin-top: -75px;
   height: 75px;
   visibility: hidden;
+}
+
+#konf-nav-scroll.affix-bottom {
+  position: absolute; 
+  top: auto;
 }
