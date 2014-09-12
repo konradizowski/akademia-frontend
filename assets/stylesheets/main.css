@@ -6768,6 +6768,10 @@ body {
   font-size: 18px;
 }
 
+.font-size-large2 {
+  font-size: 26px;
+}
+
 .font-size-big {
   font-size: 33px;
 }
@@ -6780,12 +6784,21 @@ body {
   font-weight: normal;
 }
 
-.text-red {
+.text-red, .text-red:hover {
   color: #eb0116;
+}
+.text-black {
+  color: #000000;
 }
 
 .text-grey {
   color: #898989;
+}
+.text-green {
+  color: #30AA01;
+}
+.text-blue {
+  color: #467ED3;
 }
 
 .text-lightgrey {
@@ -6799,6 +6812,10 @@ body {
 .line-bottom {
   border-bottom: 1px solid #d0d0d0;
   padding-bottom: 3px;
+}
+.line-top {
+  border-top: 1px solid #d0d0d0;
+  padding-top: 3px;
 }
 
 .line-left {
@@ -6818,17 +6835,31 @@ body {
 .bg-color2 {
   background: #f3f3f3;
 }
+.bg-color3 {
+  background: #F7F8FA;
+}
+.pos-top5 {
+  top: 5px;
+}
 
 .margin-top0 {
   margin-top: 0;
 }
 
+
 .margin-bottom0 {
   margin-bottom: 0;
 }
 
+.margin-top5 {
+  margin-top: 5px;
+}
 .margin-top20 {
   margin-top: 20px;
+}
+
+.margin-top13 {
+  margin-top: 13px;
 }
 
 .margin-bottom20 {
@@ -6842,7 +6873,15 @@ body {
 .padding-top0, .padding-top0.padding-top0 {
   padding-top: 0;
 }
-
+.padding-top5 {
+  padding-top: 5px;
+}
+.padding-top10 {
+  padding-top: 10px;
+}
+.padding-top9 {
+  padding-top: 9px;
+}
 .padding-top15 {
   padding-top: 15px;
 }
@@ -6853,6 +6892,9 @@ body {
 
 .btn-special-slider {
   padding: 5px 32px;
+}
+.border-radius0 {
+  border-radius: 0px;
 }
 
 .list-bg1 {
@@ -8032,3 +8074,25 @@ body {
   height: 75px;
   visibility: hidden;
 }
+
+#konf-nav-scroll.affix-bottom {
+  position: absolute; 
+  top: auto;
+}
+
+.ch-padd-form {
+  padding-top:31px;
+  padding-bottom:32px;
+}
+
+.special-bordered {
+    border-right: 1px solid #dddddd;
+    padding-right:10px;
+}
+table.special-bordered2 tr td {
+  line-height: 28px;
+}
+table.special-bordered2 tr td {
+  border-top: 0px;
+}
+.ekko-lightbox-container{position:relative}.ekko-lightbox-nav-overlay{position:absolute;top:0;left:0;z-index:100;width:100%;height:100%}.ekko-lightbox-nav-overlay a{z-index:100;display:block;width:49%;height:100%;padding-top:45%;font-size:30px;color:#fff;text-shadow:2px 2px 4px #000;opacity:0;filter:dropshadow(color=#000000,offx=2,offy=2);-webkit-transition:opacity .5s;-moz-transition:opacity .5s;-o-transition:opacity .5s;transition:opacity .5s}.ekko-lightbox-nav-overlay a:empty{width:49%}.ekko-lightbox a:hover{text-decoration:none;opacity:1}.ekko-lightbox .glyphicon-chevron-left{left:0;float:left;padding-left:15px;text-align:left}.ekko-lightbox .glyphicon-chevron-right{right:0;float:right;padding-right:15px;text-align:right}.ekko-lightbox .modal-footer{text-align:left}
