@@ -69,7 +69,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-7 col-md-9">
-                    <h1 class="margin-top0">Najważniejsza dokumentacja kadrowa: ewidencja i rozkład czasu pracy, akta osobowe, świadectwo pracy</h1>
+                    <h1 class="margin-top0"><strong class="text-red text-uppercase font-size-large2">Rejestracja na:</strong> Najważniejsza dokumentacja kadrowa: ewidencja i rozkład czasu pracy, akta osobowe, świadectwo pracy</h1>
 
 
                     <div class="well">
@@ -86,7 +86,8 @@
                                 <span class="text-color1">Adres:</span> <strong>ul. Łotewska 9a</strong><br>
                                 <span class="text-color1">Miejsce szkolenia:</span> <strong>Siedziba Wiedza i Praktyka, sala konf. Jowisz</strong><br>
                                 <span class="text-color1">Termin:</span> <strong>16 maja 2014 o 10:00</strong><br>
-                                <span class="text-color1">Cena:</span> <strong class="text-red">wstęp bezpłatny</strong></p>
+                                <span class="text-color1">Cena:</span> <strong class="text-red">wstęp bezpłatny</strong>
+                                <strong class="text-red pull-right">Weź udział &raquo;</strong></p>
                             </div>
                             <div class="col-xs-12 col-sm-3 col-md-3">
                                 <small class="text-lightgrey">Organizator</small><br>
@@ -123,7 +124,7 @@
   <a href="#" class="list-group-item">
     <span class="pull-right btn btn-warning margin-top13">&nbsp;&nbsp;Wybierz&nbsp;&nbsp;&raquo;&nbsp;&nbsp;</span>
     <p class="list-group-item-text font-size-large2 text-black"><strong class="text-blue">Pakiet I</strong> - Udział w szkoleniu oraz materiały szkoleniowe na pendrive</p>
-    <h5 class="list-group-item-heading font-size-large">Cena za osobę: <strong>799 zł netto</strong> (982,77 zł z 23% VAT)</h4>
+    <h4 class="list-group-item-heading font-size-large">Cena za osobę: <strong>799 zł netto</strong> (982,77 zł z 23% VAT)</h4>
   </a>
 </div> 
 <div class="list-group">
@@ -172,10 +173,11 @@
                             (pole obowiązkowe)
                         </div>
                     </div>
-                    <div class="form-group control-group ">
+                    <div class="form-group control-group  has-error">
                         <label for="TestForm_textField" class="col-sm-2 control-label">E-mail</label>
                         <div class="controls col-sm-7">
                             <input type="text" id="TestForm_textField" name="TestForm[textField]" class="form-control">
+                            <span class="help-block margin-bottom0">Walidacja błędna, proszę uzupełnić email</span>
                         </div>
                         <div class="controls col-sm-3 font-size-small text-red padding-top5">
                             (pole obowiązkowe)
@@ -220,9 +222,32 @@
                         </div>
                         <div class="controls col-sm-3 font-size-small padding-top5"></div>
                     </div>
+                    
                 </fieldset>
             </div>
         </div>
+<div class="row">
+    <div class="col-md-12">
+        <fieldset>
+                <div class="col-md-1 well bg-color1 border-radius0">
+                    <p class="padding-top9"><img src="assets/images/info-rej.jpg" alt=""></p>
+                </div>
+                <div class="col-md-7 well bg-color1 border-radius0">
+                    
+                    Rabat naliczony <strong class="text-green">poprawnie</strong>. Wysokość rabatu <strong class="text-green">10%</strong>.<br>Cena całkowita została obniżona automatycznie.
+                </div>
+
+                <div class="controls col-md-4 ch-padd-form bg-color3 border-radius0">
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox" class="pos-top5"> Zgłaszający jest uczestnikiem
+                        </label>
+                      </div>
+                </div>
+
+        </fieldset>
+    </div>
+</div>
 
 <h4 class="line-bottom line-top padding-top15 padding-bottom15">Dane do faktury</h4>
 
@@ -498,9 +523,9 @@ Dane uczestnika <span class="text-black">#3</span></h4>
 
 <div class="well bg-color1">
     <h4 class="text-black font-size-big">Kwota do zapłaty</h4>
-    <p class="font-size-large line-bottom">Cena za osobę: 576 zł netto (708,48 zł brutto)<br>
-    Liczba uczestników: <strong>1</strong><br>
-    Koszt łączny: <strong>576 zł netto</strong> (708,48 zł brutto)</p>
+    <p class="font-size-large">Cena za osobę: 576 zł netto (708,48 zł brutto)<br>
+    Liczba uczestników: <strong>1</strong></p>
+    <p class="font-size-large line-bottom">Koszt łączny: <strong>576 zł netto</strong> (708,48 zł brutto)</p>
     <p class="pull-right font-size-large text-right">Koszt całkowity do zapłaty:<br><strong>1438,20 zł netto<strong> (1768,99 zł brutto)</p>
     <p class="font-size-large text-green padding-bottom15">Uwzględniono kod promocyjny: -10%</p>
 </div>
@@ -511,7 +536,7 @@ Dane uczestnika <span class="text-black">#3</span></h4>
     <div class="col-sm-12">
         <div class="checkbox">
             <label>
-              <input type="checkbox" class="pos-top5"> Tak - Oświadczam, że akceptuje <strong class="text-red">warunki uczestnictwa</strong> oraz zobowiązuje się do dokonania opłaty.
+              <input type="checkbox" class="pos-top5"> Tak - Oświadczam, że akceptuje <strong><a href="#" class="text-red">warunki uczestnictwa</a></strong> oraz zobowiązuje się do dokonania opłaty.
             </label>
           </div>
         <div class="checkbox">
@@ -527,9 +552,9 @@ Dane uczestnika <span class="text-black">#3</span></h4>
     Po wysłaniu formularza zgłoszeniowego, na podany przez Ciebie adres e-mail<br>
     <strong>otrzymasz potwierdzenie przyjęcia zgłoszenia.</strong>   
 </div>
-<div class="text-center">lub<br><br>Pobierz wypełniony formularz w formacie PDF, wydrukuj i wyślij do nas.<br><strong>faksem: 22 518 27 50 (51)</strong> lub <strong>e-mailem: <span class="text-red">szkolenia@wip.pl</span></strong>
+<div class="text-center">lub<br><br>Pobierz wypełniony formularz w formacie PDF, wydrukuj i wyślij do nas.<br><strong>faksem: 22 518 27 50 (51)</strong> lub <strong>e-mailem: <a href="#" class="text-red">szkolenia@wip.pl</a></strong>
 <br><br>
-<a href="#" class="btn btn-default btn-lg text-uppercase">Pobierz formularz zgłoszenia w pdf</a></div>
+<a href="#" class="btn btn-default text-uppercase">Pobierz formularz zgłoszenia w pdf</a></div>
 
                    
 
